@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AnuarbekOFF.net - Музыкант</title>
+    <link rel="icon" type="image/x-icon" href="loh.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?music,concert') center/cover no-repeat;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        .btn-primary {
+            background-color: #ff8800;
+            border-color: #ff8800;
+        }
+        .advantages {
+            background: #fff;
+            padding: 50px 0;
+        }
+        .advantage-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .advantage-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AnuarbekOFF.net</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О музыканте</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Курсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Оплата курса</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Фамилия</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Номер телефона</label>
+                            <input type="tel" class="form-control" id="phoneNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Стоимость курса</label>
+                            <input type="text" class="form-control" value="4 донэра" readonly>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Оплатить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="hero text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Ильяс Ануарбеков</h1>
+            <p class="lead">Музыкант, преподаватель, виртуоз</p>
+        </div>
+    </header>
+    
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>О музыканте</h2>
+            <p>Ильяс Ануарбеков родился в Алматы, 19 лет. Некоторое время жил в Польше. Великолепный музыкант, играющий на барабанах, акустической гитаре, электрогитаре и бас-гитаре. Полукореец, полуфилиппинец. Известен коротким романом с Асией Косан.</p>
+            <p>С раннего детства проявлял талант к музыке — в три года впервые взял в руки гитару, а в пять лет уже пытался играть сложные композиции известных рок-групп. В подростковом возрасте создал свою первую музыкальную группу "Frozen Echoes", с которой выступал в небольших клубах Варшавы.</p>
+            <p>Также Ильяс известен своими экспериментами с музыкой: он создал необычный инструмент — гибрид электрогитары и казахской домбры, названный "Dombratar". Этот инструмент позволяет сочетать характерное звучание казахской народной музыки с мощными рок-рифами.</p>
+        </div>
+    </section>
+    
+    <section id="advantages" class="advantages">
+        <div class="container text-center">
+            <h2 class="mb-4">Преимущества курса</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="advantage-item p-4">
+                        <h5>Индивидуальный подход</h5>
+                        <p>Занятия адаптированы под уровень и цели каждого ученика.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-item p-4">
+                        <h5>Опытный наставник</h5>
+                        <p>Обучение от профессионального музыканта с многолетним стажем.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-item p-4">
+                        <h5>Гибкий график</h5>
+                        <p>Выбирайте удобное время для занятий, не отвлекаясь от других дел.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Курсы -->
+    <section id="courses" class="py-5">
+        <div class="container text-center">
+            <h2>Музыкальные курсы</h2>
+            <p>Обучение игре на гитаре. Длительность курса: 3 месяца.</p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#paymentModal">Оплатить курс</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        </div>
+    </section>
+    
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Контакты</h2>
+            <p>Email: <a href="mailto:iliyas.anuarbekov@narxoz.kz">iliyas.anuarbekov@narxoz.kz</a></p>
+            <p>Телефон: <a href="tel:+77475186710">+7 747 518 67 10</a></p>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 AnuarbekOFF.net. Все права защищены.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
